@@ -13,15 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // ornaments (staggered)
         document.querySelectorAll('.site-ornament').forEach((el, i) => {
             if (!el.hasAttribute('data-aos')) {
-                        el.setAttribute('data-aos', 'fade');
-                el.setAttribute('data-aos-duration', '1200');
-                el.setAttribute('data-aos-delay', String(180 * i));
+                el.setAttribute('data-aos', 'fade');
+                el.setAttribute('data-aos-duration', '300');
+                el.setAttribute('data-aos-delay', String(80 * i));
+                el.setAttribute('data-aos-easing', 'ease-out-cubic');
+            }
+        });
+
 
         // frames (welcome/home)
         document.querySelectorAll('.photo-frame, .welcome-frame').forEach((el) => {
             if (!el.hasAttribute('data-aos')) {
                 el.setAttribute('data-aos', 'zoom-in');
-                el.setAttribute('data-aos-duration', '1300');
+                el.setAttribute('data-aos-duration', '400');
                 el.setAttribute('data-aos-easing', 'ease-out-cubic');
             }
         });
@@ -32,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll(sel).forEach(el => {
                 if (!el.hasAttribute('data-aos')) {
                     el.setAttribute('data-aos', 'fade-up');
-                    el.setAttribute('data-aos-duration', '1200');
+                    el.setAttribute('data-aos-duration', '400');
                     el.setAttribute('data-aos-easing', 'ease-out-cubic');
                 }
             });
@@ -42,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize AOS with mirror and allow repeat animations on enter/leave
     AOS.init({
         disable: false, // enable AOS on all devices
-        duration: 1200, // slightly slower default duration for smoother effect
+        duration: 400, // snappier default duration
         easing: 'ease-out-cubic',
         once: false, // allow animation to happen more than once
         mirror: true // animate out when scrolling past and back in when revisiting
