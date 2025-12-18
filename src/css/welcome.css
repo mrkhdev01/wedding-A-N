@@ -84,9 +84,15 @@
     position: absolute;
     inset: -14%;
     background: url("../assets/ornaments/bingkai.svg") no-repeat center;
-    background-size: contain;
-    z-index: 2;
+    background-size: 140% auto; /* slightly enlarge so decorative edges are visible */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    z-index: 9999; /* ensure frame sits above other elements */
     pointer-events: none;
+}
+.welcome-frame {
+    overflow: visible; /* ensure overlay is not clipped */
 }
 
 /* ===============================
