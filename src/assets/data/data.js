@@ -4,8 +4,8 @@ export const data = {
             id: 1,
             name: 'Agung Aprianto',
             child: 'Putra Pertama',
-            father: 'Alm. Yatni',
-            mother: 'Pujiatti',
+            father: 'Yatni (Alm)',
+            mother: 'Pujiati',
             image: './src/assets/images/cowo.png'
         },
         P: {
@@ -58,6 +58,10 @@ export const data = {
             id: 2,
             image: './src/assets/images/2.png'
         },
+        {
+            id: 3,
+            image: './src/assets/images/3.png'
+        }
     ],
 
     bank: [
