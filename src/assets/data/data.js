@@ -69,7 +69,7 @@ export const data = {
             id: 1,
             name: 'Nurhalimah',
             icon: './src/assets/images/bni.png',
-            rekening: '1738733291'
+            rekening: '738733291'
         },
         {
             id: 2,
